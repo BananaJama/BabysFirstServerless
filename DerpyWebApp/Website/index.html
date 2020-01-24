@@ -1,0 +1,38 @@
+<!--Static Website URL-->
+<!--https://derpywebapp.z20.web.core.windows.net/-->
+<html>
+    <head>
+        <style>
+            .Footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: left;
+            }
+        </style>
+        <title>Coastal Water Temp</title>
+    </head>
+
+    <body>
+        <h1>Coastal Water Temp</h1>
+        <form name="formInputValues" onsubmit="return false">
+            <select id="station-dropdown" name="stationId"></select><br>
+            <input name="SendData" type="submit" value="Submit">
+        </form>
+
+        <p id=WaterInfo></p>
+            <table>
+                <tr>
+                    <td><b>WaterTemp:</b></WaterTemp:></td>
+                    <td id="WaterTempData"></td>
+                </tr>
+            </table>
+
+        <script src="functions.js"></script>
+
+        <div class="Footer">
+            <p id="DadJoke"></p>
+        </div>
+    </body>
+</html>

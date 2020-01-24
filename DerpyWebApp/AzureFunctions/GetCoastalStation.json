@@ -1,0 +1,18 @@
+{
+    "bindings": [
+      {
+        "name": "Timer",
+        "type": "timerTrigger",
+        "direction": "in",
+        "schedule": "0 0 7 * * 0"
+      },
+      {
+        "type": "blob",
+        "name": "outputBlob",
+        "path": "uploads/CoastalStations.json",
+        "connection": "csc227final_STORAGE",
+        "direction": "out"
+      }
+    ],
+    "disabled": false
+  }
