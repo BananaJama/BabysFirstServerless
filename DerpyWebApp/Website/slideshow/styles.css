@@ -14,16 +14,16 @@ body {
 
   .titleName {
     position: absolute;
-    top: 400px;
+    top: 350px;
     left:550px; 
-    font-size: 70pt;
+    font-size: 65pt;
   }
   
   .bulletsDiv {
     position: absolute;
-    top: 300px;
+    top: 250px;
     left: 550px;
-    font-size: 50pt;
+    font-size: 45pt;
   }
 
   .hamster {
