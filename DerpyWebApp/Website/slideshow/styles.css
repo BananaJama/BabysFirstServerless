@@ -1,34 +1,80 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li { 
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
 body {
-    background-size: 100% 100%;
-    background-image: url('BabyBackground.jpg');
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  background-image: url('BabyBackground.jpg');
+  background-repeat: no-repeat;
+}
+
+header {
+  position: fixed
+}
+
+main {
+  height: 100%;
+  margin-left: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleName {
+  font-size: 48pt;
+  text-align: center;
+  margin-left: -6rem;
+}
+
+.titleBar {
+  width: 100%;
+  font-size: 30pt;
+  color: navy; 
+  margin-bottom: 1rem;
+  margin-left: -6rem;
+}
+
+.bulletsDiv {
+  width: 100%;
+  font-size: 24pt;
+}
+
+.hamster {
+  height: 400px;
+  margin-left: -5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .titleName {
+    font-size: 72pt;
+  }
+
+  main {
+    margin-left: 36rem;
   }
 
   .titleBar {
-    position: absolute;
-    top: 0px;
-    left: 90px; 
-    font-size: 75pt;
-    color: navy; 
+    font-size: 42pt;
   }
 
-  .titleName {
-    position: absolute;
-    top: 350px;
-    left:550px; 
-    font-size: 65pt;
-  }
-  
   .bulletsDiv {
-    position: absolute;
-    top: 250px;
-    left: 550px;
-    font-size: 45pt;
+    font-size: 32pt;
   }
 
   .hamster {
-    position: absolute;
-    top: 200px;
-    left: 600px;
     height: 600px;
   }
+}
