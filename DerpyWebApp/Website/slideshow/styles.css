@@ -65,7 +65,7 @@ main {
 .hamster {
   grid-area: c;
   display: block;
-  height: 100%;
+  height: 75%;
 }
 
 @media screen and (min-width: 1024px) {
