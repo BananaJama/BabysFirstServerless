@@ -1,3 +1,7 @@
+html {
+  font-size: 100%;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -25,59 +29,47 @@ header {
 }
 
 main {
+  /* background: rgba(0,0,255,0.5); */
   height: 100%;
-  margin-left: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: center;
+  display: grid;
+  grid-template-areas: "h h h"
+                        ". c c";
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1.25fr 2fr;
 }
 
 .titleName {
-  font-size: 48pt;
+  font-size: calc(1.3rem + 3.6vw);
+  grid-area: h;
   text-align: center;
-  margin-left: -6rem;
+  margin-top: calc(50vh - 8rem);
+  margin-left: 12rem;
 }
 
 .titleBar {
+  /* background: rgba(0,255,0,0.5); */
+  padding: 2rem 0 0 2rem;
   width: 100%;
   font-size: 30pt;
+  grid-area: h;
   color: navy; 
-  margin-top: -8rem;
-  margin-bottom: 7rem;
-  margin-left: 0rem;
 }
 
 .bulletsDiv {
-  width: 100%;
-  font-size: 24pt;
-  margin-left: 15rem;
+  /* background: rgba(255,0,0,0.5); */
+  grid-area: c;
+  font-size: calc(1rem + 2vw);
+  padding-right: 2rem;
 }
 
 .hamster {
-  height: 300px;
-  width: 300px;
-  margin-left: 20rem;
+  grid-area: c;
+  display: block;
+  height: 100%;
 }
 
 @media screen and (min-width: 1024px) {
-  .titleName {
-    font-size: 72pt;
-  }
-
-  main {
-    margin-left: 36rem;
-  }
-
   .titleBar {
     font-size: 42pt;
-  }
-
-  .bulletsDiv {
-    font-size: 32pt;
-  }
-
-  .hamster {
-    height: 600px;
   }
 }
